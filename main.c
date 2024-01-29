@@ -2,6 +2,7 @@
 #include <wpad/wiiuse.h>
 #include <ogcsys.h>
 #include <network.h>
+#include <stdio.h>
 
 void init_network() {
   if (network_init() < 0) {
@@ -20,3 +21,5 @@ int main() {
   // main function
   return 0;
 }
+
+
