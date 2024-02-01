@@ -2,7 +2,7 @@
 #include <unistd.h> 
 
 
-int networkfound = 1;
+int networkfound = 0;
 
 
 int main() {
@@ -14,10 +14,14 @@ printf("locating network...\n");
 //wait
 if(networkfound==1) {
 printf("network located\n");//return zero
+//wait
+printf("loading app\n");
 } else{
-printf("error:connecrion failed\n");   
+printf("error:connecrion failed\n");
+printf("please check your router, connection to your wii, or try riiconecting\n");
 return 0;
 }
 }
+
 
 
