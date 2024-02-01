@@ -4,8 +4,12 @@
 
 int networkfound = 0;
 
+void color(){
+ printf("\033[0;32m");
+}
 
 int main() {
+color();  
 printf("welcome to wiitube by guinea7pig and toadragethe5th.*\n");
 
 //* some discalamer about how this just a portal to yt and all that boring siclamer stuff
