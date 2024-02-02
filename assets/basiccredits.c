@@ -25,7 +25,9 @@ int main() {
      printf("          specail specail thanks to the wii hombrewing cummuinity     \n");   
      //wait
       printf("       check out or project at https://github.com/toadragethe5th/WiiTube    \n");   
-      //return to menu
+      //return to men
+    // ad some credit to yt
+    
                       
 }
     
