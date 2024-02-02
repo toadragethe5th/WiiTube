@@ -1,5 +1,12 @@
 #include <stdio.h>
 #include <unistd.h> 
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <unistd.h>
+#include <wiiuse/wpad.h>
+#include <network.h>
+#include <ogc.h>
 
 
 int networkfound = 0;
