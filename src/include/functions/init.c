@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <unistd.h> 
 #include <stdlib.h>
+#include <stdint.h>
 #include <string.h>
 #include <math.h>
 #include <unistd.h>
 #include <wiiuse/wpad.h>
 #include <network.h>
 #include <ogc.h>
+
+#include 'init.h'
 
 void Initialise() {
     
@@ -28,14 +31,18 @@ void Initialise() {
 void init_Connect() {
     
     net_init();
+
     if net_init() < 0 {
 
         printf("101: Error initializing network.\n");
         
     }
 
+
     // 
-    // I believe that this is the correct method for fetching an IP address.
+    // I believe that this is the correct method for connecting to the network.
+    //
+
     int IP = net_gethostip();
     struct netconn *conn = do_newconn(NETCONN_TCP);
     u16 port = 80;
@@ -45,40 +52,20 @@ void init_Connect() {
 
 void load() { 
     
-    //code for loadig here 
+    //code for loading here 
     
 }
 
 void fail() {
     
-    printf("error:connecrion failed\n");
+    printf("error: connection failed.\n");
     printf("please check your router, connection to your wii, or try riiconecting\n");
     
 }
 
 void success() {
     
-    printf("network located\n");//return zero
-    //wait
-    printf("loading app\n");
-    
-}
-
-int main() {
-    initialize();
-    printf("welcome to wiitube by guinea7pig and toadragethe5th.*\n");
-
-    while(1) {
-
-        WPAD_ScanPads();
-        u16 buttonsDown = WPAD_ButtonsDown(0);
-
-        if (buttonsDown & WPAD_BUTTON_HOME) {
-
-            exit(0);
-            
-        }
-        
-    }
+    printf("Network Located!\n");
+    printf("Loading App...\n");
     
 }
