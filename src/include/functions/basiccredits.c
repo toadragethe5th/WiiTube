@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <unistd.h> 
 #include <stdint.h>
+#include <string.h>
+
 #include 'init.h'
 
 void credits() {
