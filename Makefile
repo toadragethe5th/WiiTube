@@ -33,7 +33,7 @@ LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
 #---------------------------------------------------------------------------------
-LIBS	:=	-logc -lm -lbte -lwiiuse 
+LIBS	:=	-logc -lm -lbte -lwiiuse -lgrrlib -lfreetype -lbz2 -lfat -ljpeg -lpngu -lpng -lz
 
 # I am 99 percent sure we are missing the network library here, I can't seem to 
 # figure out what it is
@@ -42,7 +42,7 @@ LIBS	:=	-logc -lm -lbte -lwiiuse
 # list of directories containing libraries, this must be the top level containing
 # include and lib
 #---------------------------------------------------------------------------------
-LIBDIRS	:=
+LIBDIRS	:= $(PORTLIBS)
 
 #---------------------------------------------------------------------------------
 # no real need to edit anything past this point unless you need to add additional

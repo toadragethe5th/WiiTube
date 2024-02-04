@@ -5,16 +5,23 @@
 #include <string.h>
 #include <math.h>
 #include <unistd.h>
+
+
 #include <wiiuse/wpad.h>
 #include <network.h>
 #include <ogc.h>
+#include <grrlib.h>
+
 
 #include 'init.h'
 
-void Initialise() {
+void init() {
     
     VIDEO_Init();
+    GRRLIB_Init();
     WPAD_Init();
+    WPAD_SetVRes(0,640,480);
+    WPAD_SetDataFormat(WPAD_CHAN_0, WPAD_FMT_BTNS_ACC_IR);
     rmode = VIDEO_GetPreferredMode(NULL);
     xfb = MEM_K0_TO_K1(SYS_AllocateFramebuffer(rmode));
     console_init(xfb,20,20, rmode->fbWidth,rmode->xfbHeight,rmode->fbWidth*VI_DISPLAY_PIX_SZ);
