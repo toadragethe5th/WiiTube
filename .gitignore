@@ -1,10 +1,18 @@
+# Created by https://www.toptal.com/developers/gitignore/api/c,c++,assembler
+# Edit at https://www.toptal.com/developers/gitignore?templates=c,c++,assembler
+
+### Assembler ###
+*.exe
+*.o
+*.obj
+*.bc
+
+### C ###
 # Prerequisites
 *.d
 
 # Object files
-*.o
 *.ko
-*.obj
 *.elf
 
 # Linker output
@@ -29,7 +37,6 @@
 *.dylib
 
 # Executables
-*.exe
 *.out
 *.app
 *.i*86
@@ -50,3 +57,24 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+### C++ ###
+# Prerequisites
+
+# Compiled Object files
+*.slo
+
+# Precompiled Headers
+
+# Compiled Dynamic libraries
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+
+# Executables
+
+# End of https://www.toptal.com/developers/gitignore/api/c,c++,assembler
