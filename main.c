@@ -31,6 +31,8 @@
 */
 
 #include 'init.h'
+#include 'credits.h'
+
 
 ir_t ir;
 

@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <string.h>
 
-#include 'init.h'
+#include 'credits.h'
 
 void credits() {
 
@@ -25,4 +25,3 @@ void credits() {
     add some credit to yt */
     
 }
-    
