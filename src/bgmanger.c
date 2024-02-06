@@ -2,31 +2,41 @@
 #include <grrlib.h>
 
 
-int lightmode=1
+int lightmode = 1
 //1=light
 //2 eqauls dark
 
-
-void setbglightmode()
-{
+void setbglightmode() {
+  
   //make in if statment for chaning th bg color from white to black whene using dark mode.
-  if (lightmode==1)
-{
-  RRLIB_SetBackgroundColour (u8 r, u8 g, u8 b, u8 a)›
-}else
-  RRLIB_SetBackgroundColour (u8 r, u8 g, u8 b, u8 a)›  //whatever black is
+  if (lightmode==1) {
+    
+    RRLIB_SetBackgroundColour();
+    
+  } else {
+    
+    RRLIB_SetBackgroundColour(); //whatever black is
+    
+  }
+  
 }
 
-void setbgcustomcolor()
-{// some collor picker
+
+
+void setbgcustomcolor() {
+  
+  // some collor picker
  
- //some custom clolor code
-  RRLIB_SetBackgroundColour (custom_color)›
+  //some custom clolor code
+  RRLIB_SetBackgroundColour(custom_color);
+  
 }
 
 
 // need to make this correct
 int main() {
-setbglightmode()
+
+  setbglightmode();
+  
 }
 
