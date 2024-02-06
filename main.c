@@ -30,14 +30,16 @@
 
 */
 
-#include 'init.h'
-#include 'credits.h'
+#include "init.h"
+#include "credits.h"
+#include "grrlibload.h"
+#include "bgmanager.h"
 
 
 ir_t ir;
 
 
-// GRRLIB colors if we need them
+// I vote that we would move these to a header.
 
 #define GRRLIB_BLACK   0x000000FF 
 #define GRRLIB_MAROON  0x800000FF
