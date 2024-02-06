@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <grrlib.h>
+
 
 int lightmode=1
 //1=light
