@@ -31,9 +31,6 @@
 */
 
 #include "init.h"
-#include "credits.h"
-#include "grrlibload.h"
-#include "bgmanager.h"
 
 
 ir_t ir;
