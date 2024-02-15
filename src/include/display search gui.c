@@ -27,44 +27,20 @@ GRRLIB_LoadTextureFromFile(wii_tube_logo.png)
 void displayiconborders()
 {
     //box for trending
- int GRRLIB_Rectangle	(const f32 0,
- const f32 50,
- const f32 100,
- const f32	200,
- const u32 (0,0,0,0)
- const bool	false )
+ int GRRLIB_Rectangle	(0,50,100,200,(0,0,0,0),false )
 //box or most veiwed
- int GRRLIB_Rectangle	(const f32 0,
- const f32 200,
- const f32 100,
- const f32	200,
- const u32 (0,0,0,0)
+ int GRRLIB_Rectangle	(0,200,100,200, (0,0,0,0)
  const bool	false )
 
 
 //box for srearch
- int GRRLIB_Rectangle	(const f32 0,
- const f32 400,
- const f32 100,
- const f32	200,
- const u32 (0,0,0,0)
- const bool	false )
+ int GRRLIB_Rectangle	(0,400, 100,200, (0,0,0,0),false )
 }
 
 void guiborder()
 {
-int GRRLIB_Line	(	
-const f32	50,
-const f32	50,
-const f32	480,
-const f32	50,
-const u32	(0,0,0,0) )
+int GRRLIB_Line	(50,50,480,50,(0,0,0,0) )
 
-int GRRLIB_Line	(	
-const f32	50,
-const f32	50,
-const f32	50,
-const f32	720,
-const u32	(0,0,0,0) )
+int GRRLIB_Line	(50,50,	50,720,(0,0,0,0) )
 
 }
