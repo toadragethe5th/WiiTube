@@ -5,3 +5,5 @@ void displayiconborders();
 void displayicons();
 void displaywiitubelogo();
 void guiborder();
+
+#endif

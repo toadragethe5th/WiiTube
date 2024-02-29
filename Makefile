@@ -44,6 +44,9 @@ LIBS	:=	-logc -lm -lbte -lwiiuse -lgrrlib -lfreetype -lbz2 -lfat -ljpeg -lpngu -
 #---------------------------------------------------------------------------------
 LIBDIRS	:= $(PORTLIBS)
 
+
+# PLEASE NOBODY EDIT PAST HERE! EVERYTHING IS FINE THE WAY IT IS!
+
 #---------------------------------------------------------------------------------
 # no real need to edit anything past this point unless you need to add additional
 # rules for different file extensions

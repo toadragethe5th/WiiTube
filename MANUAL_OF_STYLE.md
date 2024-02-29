@@ -36,3 +36,21 @@ int main()
 }
 ```
 is fine, just please try to keep it consistent with the rest of the file.
+
+## FILE NAMING
+
+### NAMES
+The names should reflect what the file does, and be short and concise.
+
+Good Name:
+`search.c`
+Bad name:
+`filethatsearchesyoutubetofindthingsanddisplaysthem.c`
+
+### SPACES
+**PLEASE DON'T PUT SPACES IN FILES!** THEY DO NOT BELONG!
+follow the general naming scheme, so instead of `bad name.c`:
+
+- `bad_name.c`
+- `bad-name.c`
+- `badName.c`

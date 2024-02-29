@@ -7,7 +7,8 @@ This planner is meant to document all of the notes and stuff we need to do. **AL
 
 - Convert all of the non-main files with header functions
 - Trending code
-- make the loading/network searcher screen look beetter than just text
+- make the loading/network searcher screen look better than just text
+
 ## NOTES:
 
 - Always remember the semicolons.
