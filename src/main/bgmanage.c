@@ -1,20 +1,21 @@
 #include <stdio.h>
-#include <grrlib.h>
-#include <ogc.h>
 #include <stdint.h>
 
-#include "bgmanager.h"
+#include <grrlib.h>
+#include <ogc.h>
 
-int lightmode = 1
-//1=light
-//2 eqauls dark
+#include "bgmanage.h"
+
+
+int lightmode = 1            // 1 = light, 0 = dark
+
 
 void setbglightmode() {
   
   	//make in if statment for chaning th bg color from white to black whene using dark mode.
   	if (lightmode==1) {
     
-    	RRLIB_SetBackgroundColour();
+    	RRLIB_SetBackgroundColour(); // whatever white is
     
   	} else {
     
@@ -34,4 +35,3 @@ void setbgcustomcolor() {
   	RRLIB_SetBackgroundColour(custom_color);
   
 }
-

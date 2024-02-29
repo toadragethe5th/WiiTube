@@ -1,6 +1,7 @@
 #include <grrlib.h>
 #include <stdio.h>
 
+#include 'trending.h'
 
 /*
 
@@ -51,12 +52,5 @@ void guiborder()
     GRRLIB_Line(50,50,480,50,(0,0,0,0));
     GRRLIB_Line(50,50,50,720,(0,0,0,0));
 
-
-}
-
-void main()
-{
-
-    displayicons();
 
 }

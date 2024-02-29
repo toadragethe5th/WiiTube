@@ -27,6 +27,10 @@
         -include
             -headers
                 - init.h
+                - trending.h
+                - popular.h
+                - credits.h
+                - bgmanage.h
 
 */
 
