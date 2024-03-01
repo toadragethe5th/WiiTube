@@ -8,7 +8,9 @@ This planner is meant to document all of the notes and stuff we need to do. **AL
 - Convert all of the non-main files with header functions
 - Trending code
 - make the loading/network searcher screen look better than just text
+- fix credits file duplicate
 
 ## NOTES:
 
 - Always remember the semicolons.
+- C files don't belong in the include folder.
