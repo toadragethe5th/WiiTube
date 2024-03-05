@@ -10,10 +10,13 @@ displayicons()
 void displayicons()
 {
 GRRLIB_LoadTextureFromFile(trending_selected.png)	//grabs the selected version of the trending page
-//code for displaying the selected version of the trending pagen goes here 
+GRRLIB_DrawImg (150, 450,trending_selected.png,0,1,1,(0,0,0,0))
+
 GRRLIB_LoadTextureFromFile(mostpopunselected.png)
+GRRLIB_DrawImg (150, 650,mostpopunselected.png,0,1,1,(0,0,0,0))
 //code for disp;aying
 GRRLIB_LoadTextureFromFile(search_icon.png)
+GRRLIB_DrawImg (150, 250,search_icon.png,0,1,1,(0,0,0,0))
 //code for display icons
 
 }
@@ -21,6 +24,7 @@ GRRLIB_LoadTextureFromFile(search_icon.png)
 void displaywiitubelogo()
 {
 GRRLIB_LoadTextureFromFile(wii_tube_logo.png)
+GRRLIB_DrawImg (150,0,wii_tube_logo.png,0,1,1,(0,0,0,0))
 //code for displaying
 }
 
