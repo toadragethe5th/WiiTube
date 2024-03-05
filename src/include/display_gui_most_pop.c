@@ -3,7 +3,6 @@
 //paremeters
 //void 	GRRLIB_DrawImg (x,y , texture, rotation, scaleX,  scaleY,  color)
 
-// need to update the cocept code 
 
 void main()
 {
@@ -12,14 +11,8 @@ displayicons()
 
 void displayicons()
 {
-GRRLIB_LoadTextureFromFile(trending_unselected.png)	//grabs the selected version of the trending page
-
 GRRLIB_DrawImg (150, 450,trending_unselected.png,0,1,1,(0,0,0,0))
-//code for displaying the selected version of the trending pagen goes here 
-GRRLIB_LoadTextureFromFile(mostpopselected.png)
 GRRLIB_DrawImg (150, 650,trending_unselected.png,0,1,1,(0,0,0,0))
-//code for disp;aying
-GRRLIB_LoadTextureFromFile(search_icon.png)
 GRRLIB_DrawImg (150, 250,search_icon.png,0,1,1,(0,0,0,0))
 //code for display icons
 
@@ -27,9 +20,18 @@ GRRLIB_DrawImg (150, 250,search_icon.png,0,1,1,(0,0,0,0))
 
 void displaywiitubelogo()
 {
-GRRLIB_LoadTextureFromFile(wii_tube_logo.png)
 GRRLIB_DrawImg (150,0,wii_tube_logo.pngg,0,1,1,(0,0,0,0))
 //code for displaying
+}
+
+void LoadTextures()
+{
+GRRLIB_LoadTextureFromFile(trending_unselected.png)
+GRRLIB_LoadTextureFromFile(mostpopselected.png)
+GRRLIB_LoadTextureFromFile(search_icon.png)
+GRRLIB_LoadTextureFromFile(wii_tube_logo.png)
+
+
 }
 
 void displayiconborders()
