@@ -1,7 +1,10 @@
 #ifndef BGMANAGE_H
 #define BGMANAGE_H
 
+/*
 #include "grrlibload.h"
+*/
+
 
 /*
 

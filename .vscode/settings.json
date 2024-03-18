@@ -1,0 +1,8 @@
+{
+    "editor.fontVariations": false,
+    "json.format.keepLines": true,
+    "files.autoSave": "onWindowChange",
+    "editor.wordWrap": "off",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingComments": "always"
+}

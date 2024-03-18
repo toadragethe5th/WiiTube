@@ -5,10 +5,12 @@ This planner is meant to document all of the notes and stuff we need to do. **AL
 
 ## TODO:
 
-- Convert all of the non-main files with header functions
+### PLEASE CROSS THEM OUT WHEN YOU ARE DONE WITH THEM, AND ADD THE FILE FOR IT!!!
+- ~~Convert all of the non-main files with header functions~~
 - Trending code
 - make the loading/network searcher screen look better than just text
-- fix credits file duplicate
+- ~~fix credits file duplicate~~
+- Cursor code (main.c)
 
 ## NOTES:
 

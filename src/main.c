@@ -37,6 +37,7 @@
 #include "init.h"
 #include "credits.h"
 #include "bgmanager.h"
+#include 
 
 
 ir_t ir;

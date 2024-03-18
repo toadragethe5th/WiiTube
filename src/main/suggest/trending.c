@@ -6,8 +6,7 @@
 /*
 
     Trending page
-
-    GUINEA7PIG! REMEMBER TO USE HEADERS!
+    REMEMBER TO USE HEADERS!
 
     The 
 
