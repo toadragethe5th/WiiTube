@@ -3,7 +3,9 @@
 #---------------------------------------------------------------------------------
 .SUFFIXES:
 #---------------------------------------------------------------------------------
-DEVKITPPC   :=  rules
+ifeq ($(strip $(DEVKITPPC)),)
+$(error "Please set DEVKITPPC in your environment. export DEVKITPPC=<path to>devkitPPC)
+endif
 
 include $(DEVKITPPC)/wii_rules
 
@@ -15,14 +17,8 @@ include $(DEVKITPPC)/wii_rules
 #---------------------------------------------------------------------------------
 TARGET		:=	$(notdir $(CURDIR))
 BUILD		:=	build
-
-# I think this is the right directory
-SOURCES		:=	src
-
-# What even is this?
-DATA		:=	data
-
-# Our include folder
+SOURCES		:=	source
+DATA		:=	data  
 INCLUDES	:=	include
 
 #---------------------------------------------------------------------------------
