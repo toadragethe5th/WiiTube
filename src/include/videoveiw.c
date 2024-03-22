@@ -112,9 +112,10 @@ void buttonmanger()
 
 void buttondisplay()
 {
-    //void 	GRRLIB_DrawImg (x,y , texture, rotation, scaleX,  scaleY,  color)    
+  
     GRRLIB_DrawImg(50,500,play_button.png,0,playbuttonhidden,1,(0,0,0,0))
     GRRLIB_DrawImg(50,500,pausebutton.png,0,puusebuttonhiden0,1,(0,0,0,0))
+
 }
 
 
@@ -129,7 +130,7 @@ void LoadTextures()
     GRRLIB_LoadTextureFromFile(no_volume.png)
 }
 
-void buttonmanger()
+void buttonmanager()
 {
-    //code for manging buttin iput stuff    
+        
 }

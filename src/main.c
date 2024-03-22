@@ -37,7 +37,8 @@
 #include "init.h"
 #include "credits.h"
 #include "bgmanager.h"
-#include 
+#include "about.h"
+#include "searchgui.h"
 
 
 ir_t ir;
