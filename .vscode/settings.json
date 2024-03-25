@@ -1,8 +1,22 @@
 {
-    "editor.fontVariations": false,
-    "json.format.keepLines": true,
-    "files.autoSave": "onWindowChange",
-    "editor.wordWrap": "off",
-    "editor.autoClosingBrackets": "always",
-    "editor.autoClosingComments": "always"
+    "[c]": {},
+    "[plaintext]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false
+    },
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "[makefile]": {
+        "editor.insertSpaces": false
+    },
+    "[ignore]": {},
 }

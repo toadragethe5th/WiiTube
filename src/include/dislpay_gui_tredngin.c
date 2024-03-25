@@ -81,16 +81,15 @@ void guiborder()
   //make it so the selected box is only hidden for a short time if the button isnt fuctioal
 //goes to wiitubehome 
   }
-  if(ButtonDown & WPAD_BUTTON_A & buttonselected=2)
-  {
-  button_selected_box=0
-  //goes to search    
+  if (ButtonDown & WPAD_BUTTON_A & buttonselected=2) {
+    button_selected_box=0
+    //goes to search    
   }
   if(ButtonDown & WPAD_BUTTON_A & buttonselected=3)
-{
-button_selected_box=0
-//goes to trending 
-}
+  {
+    button_selected_box=0
+  //goes to trending 
+  }
 
   
   if(ButtonDown & WPAD_BUTTON_A & buttonselected=4)  

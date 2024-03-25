@@ -39,7 +39,8 @@
 #include "bgmanager.h"
 #include "about.h"
 #include "searchgui.h"
-
+#include "trending.h"
+#include "pointer.h"
 
 ir_t ir;
 
@@ -69,10 +70,23 @@ int main() {
         u32 buttonsDown = WPAD_ButtonsDown();
         WPAD_IR(0, &ir);
 
+        // Confirmation
         if (buttonsDown & WPAD_BUTTON_HOME) {
 
-            printf("Exiting...");
-            exit(0);
+            printf("Are you sure you want to exit?\nPress home again to confirm, and B to cancel.\n");
+            if (buttonsDown & WPAD_BUTTON_HOME) {
+
+                printf("Exiting...See you later!");
+                exit(0); // Exit code of zero, might make a list later.
+
+            } else if
+
+
+        }
+
+        if (buttonsDown & WPAD_BUTTON_PLUS) {
+
+            // SERIOUSLY, HOW DO YOU DRAW IMAGES WITH GRRLIB?
 
         }
 
