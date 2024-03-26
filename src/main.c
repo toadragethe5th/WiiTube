@@ -15,7 +15,6 @@
 
 #include <wiiuse/wpad.h>
 #include <network.h>
-#include <ogc.h>
 #include <grrlib.h>
 
 
