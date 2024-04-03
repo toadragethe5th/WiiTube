@@ -13,10 +13,10 @@ void sothing()
 
 void displayicons()
 {
-    GRRLIB_DrawImg (150, 450,trending_unselected.png,0,1,1,(0,0,0,0))
-    GRRLIB_DrawImg (150, 650,mostpopununselected.png,0,1,1,(0,0,0,0))
-    GRRLIB_DrawImg (150, 250,search_icon.png,0,1,1,(0,0,0,0))
-    //code for display icons
+  GRRLIB_DrawImg (150, 450,trending_unselected.png,0,1,1,(0,0,0,0))
+  GRRLIB_DrawImg (150, 650,mostpopununselected.png,0,1,1,(0,0,0,0))
+  GRRLIB_DrawImg (150, 250,search_icon.png,0,1,1,(0,0,0,0))
+  //code for display icons
 }
 
 void LoadTextures()

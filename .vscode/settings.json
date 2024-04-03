@@ -5,7 +5,7 @@
         "editor.unicodeHighlight.invisibleCharacters": false
     },
     "[markdown]": {
-        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.ambiguousCharacters": true,
         "editor.unicodeHighlight.invisibleCharacters": false,
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.wordWrap": "on",
@@ -13,7 +13,7 @@
             "comments": "off",
             "strings": "off",
             "other": "off"
-        }
+        },
     },
     "[makefile]": {
         "editor.insertSpaces": false

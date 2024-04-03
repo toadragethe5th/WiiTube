@@ -14,6 +14,7 @@
 */
 
 #include <wiiuse/wpad.h>
+#include <ogc/usbkeyboard.h>
 #include <network.h>
 #include <grrlib.h>
 
@@ -41,7 +42,6 @@
 #include "trending.h"
 #include "pointer.h"
 
-ir_t ir;
 
 
 //
@@ -57,6 +57,16 @@ int main() {
 
     init();
     init_Connect();
+
+    ir_t ir;
+    
+    /*
+    if USBKeyboard_IsConnected() {
+
+        USBKeyboard_Initialize();
+        
+    }
+    */
 
     GRRLIB_texImg *full_volume    = GRRLIB_LoadPNG("assets/full_volume.png");
     GRRLIB_texImg *low_volume     = GRRLIB_LoadPNG("assets/low_volume.png");
