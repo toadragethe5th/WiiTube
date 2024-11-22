@@ -14,7 +14,6 @@
 */
 
 #include <wiiuse/wpad.h>
-#include <ogc/usbkeyboard.h>
 #include <network.h>
 #include <grrlib.h>
 
@@ -36,7 +35,7 @@
 
 #include "init.h"
 #include "credits.h"
-#include "bgmanager.h"
+#include "bgmanage.h"
 #include "about.h"
 #include "searchgui.h"
 #include "trending.h"
@@ -56,7 +55,7 @@
 int main() {
 
     init();
-    init_Connect();
+    init_connect();
 
     ir_t ir;
     
@@ -68,15 +67,15 @@ int main() {
     }
     */
 
-    GRRLIB_texImg *full_volume    = GRRLIB_LoadPNG("assets/full_volume.png");
-    GRRLIB_texImg *low_volume     = GRRLIB_LoadPNG("assets/low_volume.png");
-    GRRLIB_texImg *medium_volume  = GRRLIB_LoadPNG("assets/medium_volume.png");
-    GRRLIB_texImg *no_volume      = GRRLIB_LoadPNG("assets/no_volume.png");
+    GRRLIB_texImg *full_volume    = GRRLIB_LoadTextureFromFile("assets/full_volume.png");
+    GRRLIB_texImg *low_volume     = GRRLIB_LoadTextureFromFile("assets/low_volume.png");
+    GRRLIB_texImg *medium_volume  = GRRLIB_LoadTextureFromFile("assets/medium_volume.png");
+    GRRLIB_texImg *no_volume      = GRRLIB_LoadTextureFromFile("assets/no_volume.png");
 
-    while 1 {
+    while(1){
 
         WPAD_ScanPads();
-        u32 buttonsDown = WPAD_ButtonsDown();
+        u32 buttonsDown = WPAD_ButtonsDown(0);
         WPAD_IR(0, &ir);
 
         // Confirmation
@@ -88,9 +87,7 @@ int main() {
                 printf("Exiting...See you later!");
                 exit(0); // Exit code of zero, might make a list later.
 
-            } else if
-
-
+            } 
         }
 
         if (buttonsDown & WPAD_BUTTON_PLUS) {

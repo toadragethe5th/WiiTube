@@ -2,9 +2,9 @@
 #include <unistd.h> 
 #include <stdint.h>
 
-#include 'init.h'
+#include <init.h>
 
-initialize();
+//initialize(); idk what this do
 
 // Ugly as hell, lets gooooo
 void credits() 

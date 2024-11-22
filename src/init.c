@@ -9,7 +9,7 @@
 
 #include <wiiuse/wpad.h>
 #include <network.h>
-#include <ogc.h>
+//#include <ogc.h> again with this i dont think it exsits
 #include <grrlib.h>
 
 
